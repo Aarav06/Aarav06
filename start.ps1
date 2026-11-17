@@ -5,7 +5,7 @@ $venvDir = "venv"
 $backendDir = "backend"
 
 # Path to requirements file
-$requirementsFile = "requirements.txt"
+$requirementsFile = "backend/requirements.txt"
 
 # Path to python executable
 $pythonScript = "main.py"

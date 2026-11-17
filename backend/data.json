@@ -35,6 +35,20 @@
         {
             "name": "Magicure",
             "price": 200.0
+        },
+        {
+            "name": null,
+            "price": 8.99
+        },
+        {
+            "price": 3.49
+        },
+        {
+            "name": "Vitalix"
+        },
+        {
+            "name": "Panaceon",
+            "price": "6.99"
         }
     ]
 }
