@@ -29,8 +29,21 @@ const errorEl = document.getElementById("error");
  * TODO (Core task 1): fetch the list of medicines from /medicines.
  * Return the medicines array. Surface network/HTTP errors so the caller can show them.
  */
+
 async function fetchMedicines() {
     // TODO: fetch(`${BASE_URL}/medicines`), check response.ok, return the data.
+
+    try {
+        const response = await fetch(`${BASE_URL}/medicines`);
+        if (!response.ok) {
+            throw new Error(`Response status: ${response.status}`);
+        }
+
+        const result = await response.json();
+        console.log(result);
+    } catch (error) {
+        console.error(error.message);
+    }
 }
 
 /**
@@ -43,6 +56,10 @@ function renderMedicines(data) {
     // TODO: build a table (the .results styles expect a <table>), iterate the
     // records, and render each row safely. Use the .invalid class to flag bad
     // values if you like.
+
+
+
+
 }
 
 /**
